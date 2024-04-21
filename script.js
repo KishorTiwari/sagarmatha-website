@@ -13,4 +13,5 @@ $(document).ready(function () {
                 $('.mob-navlist').removeClass('animate__lightSpeedOutRight');
             });
     });
+    Fancybox.bind();
 });

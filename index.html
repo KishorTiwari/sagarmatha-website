@@ -11,9 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/lib/fancybox/fancybox.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="tailwind.js"></script>
+    <script type="text/javascript" src="/lib/fancybox/fancybox.umd.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </head>
 
@@ -112,28 +114,64 @@
     <!-- hero -->
 
     <!-- events -->
-    <div class="events-section my-14">
+    <div class="section my-14">
         <h1 class="text-4xl mb-8 pl-6 relative">Upcoming Events</h1>
-        <div class="flex flex-col gap-12">
-            <div class="flex flex-col">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="flex flex-col w-full">
                 <div class="w-full mb-4">
                     <img class="w-full h-auto rounded-md" src="images/placeholder-square.jpg" alt="">
                 </div>
                 <div>
                     <span class="text-xs text-gray-400 font-bold uppercase">MAY 19, 2020</span>
                     <h1 class="pb-2 text-2xl text-[var(--primary-color-dark)]">Sagarmatha vs Club X</h1>
-                    <a class="text-xs font-bold text-[var(--primary-color-dark)] uppercase" href="/"><span class="mr-2">+</span> LEARN MORE</a>
+                    <a class="text-xs font-bold text-[var(--primary-color-dark)] uppercase" href="/"><span
+                            class="mr-2">+</span> LEARN MORE</a>
                 </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col w-full">
                 <div class="w-full mb-4">
                     <img class="w-full h-auto rounded-md" src="images/placeholder-square.jpg" alt="">
                 </div>
                 <div>
                     <span class="text-xs text-gray-400 font-bold uppercase">MAY 19, 2020</span>
-                    <h1 class="pb-2 text-2xl text-[var(--primary-color-dark)]">Line for upcoming match</h1>
-                    <a class="text-xs font-bold text-[var(--primary-color-dark)] uppercase" href="/"><span class="mr-2">+</span> LEARN MORE</a>
+                    <h1 class="pb-2 text-2xl text-[var(--primary-color-dark)]">Sagarmatha vs Club X</h1>
+                    <a class="text-xs font-bold text-[var(--primary-color-dark)] uppercase" href="/"><span
+                            class="mr-2">+</span> LEARN MORE</a>
                 </div>
+            </div>
+            <div class="flex flex-col w-full">
+                <div class="w-full mb-4">
+                    <img class="w-full h-auto rounded-md" src="images/placeholder-square.jpg" alt="">
+                </div>
+                <div>
+                    <span class="text-xs text-gray-400 font-bold uppercase">MAY 19, 2020</span>
+                    <h1 class="pb-2 text-2xl text-[var(--primary-color-dark)]">Sagarmatha vs Club X</h1>
+                    <a class="text-xs font-bold text-[var(--primary-color-dark)] uppercase" href="/"><span
+                            class="mr-2">+</span> LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- events -->
+
+    <!-- gallary -->
+    <div class="section my-14">
+        <h1 class="text-4xl mb-8 pl-6 relative">Gallary</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div>
+                <a href="images/placeholder-square.jpg" data-fancybox data-caption="Single image">
+                    <img src="images/placeholder-square.jpg" />
+                </a>
+            </div>
+            <div>
+                <a href="images/placeholder-square.jpg" data-fancybox data-caption="Single image">
+                    <img src="images/placeholder-square.jpg" />
+                </a>
+            </div>
+            <div>
+                <a href="images/placeholder-square.jpg" data-fancybox data-caption="Single image">
+                    <img src="images/placeholder-square.jpg" />
+                </a>
             </div>
         </div>
     </div>

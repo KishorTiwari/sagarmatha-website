@@ -164,7 +164,7 @@ body {
 }
 
 /* event section */
-.events-section > h1::before {
+.section > h1::before {
     content: '';
     height: 16px;
     width: 6px;
@@ -174,7 +174,7 @@ body {
     background-color: #000;
 }
 
-.events-section > h1::after {
+.section > h1::after {
     content: '';
     height: 6px;
     width: 16px;
