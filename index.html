@@ -8,76 +8,104 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Oswald:wght@200..700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Oswald:wght@200..700&display=swap&Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="/lib/fancybox/fancybox.css" />
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="tailwind.js"></script>
     <script type="text/javascript" src="/lib/fancybox/fancybox.umd.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <style type="text/tailwindcss">
+        #contact_form input {
+            @apply rounded-3xl bg-gray-800 p-4 text-sm;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- nav -->
-    <div class="nav">
-        <div class="nav-logo">
-            <div>
-                <img src="logo.png" />
+    <!-- landing desktop -->
+    <div class="flex flex-col bg-[url('images/bg_hero_01.jpg')] bg-cover min-h-svh">
+        <!-- nav -->
+        <div class="nav flex justify-between items-center px-8 py-4 md:py-8">
+            <div class="nav-logo flex justify-start gap-x-2 items-center flex-1 text-left">
+                <img src="logo.png" class="w-[var(--logo-size)] h-auto" />
+                <!-- <span class="text-white text-2xl font-licorice">Sagarmatha Sports Club</span> -->
             </div>
-            <div>
-                <p>Sagarmatha Sports Club</p>
-            </div>
-        </div>
-        <div class="nav-bar">
-            <div class="menu" id="menu">
-                <img src="icons/menu.svg" alt="Menu Icon">
-            </div>
-            <div class="mob-navlist">
-                <div class="close-icon flex justify-end items-center">
-                    <img src="icons/close.svg" alt="Menu Icon">
+            <div class="nav-bar mx-auto">
+                <div class="menu" id="menu">
+                    <img src="icons/menu.svg" alt="Menu Icon">
                 </div>
-                <ul>
-                    <li>
-                        <a href="">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="">Upcoming Events</a>
-                    </li>
-                    <li>
-                        <a href="">Past Events</a>
-                    </li>
-                    <li>
-                        <a href="">Gallary</a>
-                    </li>
-                    <li>
-                        <a href="">Contact Us</a>
-                    </li>
-                </ul>
+                <div class="mob-navlist">
+                    <div
+                        class="close-icon py-4 px-8 flex justify-end items-center min-h-[var(--logo-size)] box-content">
+                        <img src="icons/close.svg" alt="Menu Icon">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Events</a>
+                        </li>
+                        <li>
+                            <a href="">Gallary</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desk-navlist font-light">
+                    <ul>
+                        <li>
+                            <a href="">Events</a>
+                        </li>
+                        <li>
+                            <a href="">Courses</a>
+                        </li>
+                        <li>
+                            <a href="">Gallary</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="desk-navlist">
-                <ul>
-                    <li>
-                        <a href="">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="">Upcoming Events</a>
-                    </li>
-                    <li>
-                        <a href="">Past Events</a>
-                    </li>
-                    <li>
-                        <a href="">Gallary</a>
-                    </li>
-                    <li>
-                        <a href="">Contact Us</a>
-                    </li>
-                </ul>
+            <div class="flex-1 text-right hidden md:block">
+                <button class="btn">Become a Member</button>
             </div>
         </div>
+        <!-- nav -->
+        <!-- hero -->
+        <div class="flex flex-col-reverse flex-1 text-gray-300 gap-x-4 px-8 md:flex-row">
+            <div class="flex-1 flex basis-2/6 gap-y-4 items-start justify-start md:justify-center flex-col">
+                <h2
+                    class="text-transparent text-5xl font-bold bg-clip-text bg-gradient-to-r from-[var(--primary-color)] to-white">
+                    Sagarmatha Football And Social Club.
+                </h2>
+                <h2 class="pr-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </h2>
+                <div class="flex justify-start gap-x-2 mt-6
+                animate__animated animate__infinite animate__jello become-member-animate">
+                    <button class="btn secondary">Become a Memember</button>
+                </div>
+            </div>
+            <div class="flex flex-1 basis-4/6 items-center">
+                <img src="images/soccer_art.png" alt="" class="w-[80%] mx-auto md:w-full">
+            </div>
+        </div>
+        <!-- hero -->
     </div>
-    <!-- nav -->
+    <!-- landing desktop -->
+
+    </div>
 
     <!-- hero mobile -->
     <div class="hero-wrap flex flex-col md:hidden">
@@ -93,25 +121,7 @@
             </div>
         </div>
     </div>
-    <!-- hero -->
 
-    <!-- hero desktop -->
-    <div class="hero-wrap
-                hidden md:flex justify-end items-end bg-[url('images/hero.jpg')] bg-cover
-                h-[calc(100vh-122px)]">
-        <div class="clip-right
-                    content flex p-6 w-full text-center
-                    bg-gradient-to-r to-transparent from-white">
-            <div class="flex flex-col gap-2 justify-center 
-                        text-left border-l-2 p-3 border-l-[--primary-color]
-                        max-w-[45%]">
-                <h1 class="mb-1 italic font-medium">Chasing Glory, Crafting Legends</h1>
-                <p>Join Us on Our Journey to the Top – Where Every Match Is a Story Unfolding</p>
-                <button class="mt-4 btn btn-primary md:w-1/2">Become a Desk</button>
-            </div>
-        </div>
-    </div>
-    <!-- hero -->
 
     <!-- events -->
     <div class="section my-14">
@@ -176,6 +186,34 @@
         </div>
     </div>
     <!-- events -->
+    <!-- footer -->
+    <div class="section py-16 pb-4 bg-black flex flex-col gap-y-10 justify-between items-center text-white">
+        <div class="w-[100%] max-w-[800px]">
+            <div class="text-center mb-10">
+                <h2
+                class="text-transparent text-5xl font-bold bg-clip-text bg-gradient-to-r from-[var(--primary-color)] to-white mb-2">
+                Get in touch.</h2>
+                <p class="text-gray-400 text-sm">Please leave us any concerns, feedback or anything matter. We'll try to respond ASAP. Thank you.</p>
+            </div>
+            <form action="" id="contact_form" class="flex flex-col gap-y-6">
+                <div class="flex gap-x-4">
+                    <input type="text" placeholder="Name" class="rounded-3xl bg-gray-800 p-4 text-sm w-full">
+                    <input type="text" placeholder="Email" class="rounded-3xl bg-gray-800 p-4 text-sm w-full">
+                </div>
+                <textarea type="text" placeholder="Message" class="rounded-3xl bg-gray-800 p-4 text-sm" rows="6"></textarea>
+                <button class="btn rounded-3xl">Submit</button>
+            </form>
+        </div>
+        <div class="flex gap-x-3 text-2xl text-gray-500">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="pt-10  text-gray-500">
+            Made with <i class="fa-solid fa-heart text-xs text-red-600"></i> by Kishor
+        </div>
+    </div>
+    <!-- footer -->
 </body>
 
 </html>

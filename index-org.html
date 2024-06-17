@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/lib/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="tailwind.js"></script>
+    <script type="text/javascript" src="/lib/fancybox/fancybox.umd.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="nav">
+        <div class="nav-logo">
+            <div>
+                <img src="logo.png" />
+            </div>
+            <div>
+                <p>Sagarmatha Sports Club</p>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <div class="menu" id="menu">
+                <img src="icons/menu.svg" alt="Menu Icon">
+            </div>
+            <div class="mob-navlist">
+                <div class="close-icon flex justify-end items-center">
+                    <img src="icons/close.svg" alt="Menu Icon">
+                </div>
+                <ul>
+                    <li>
+                        <a href="">Announcements</a>
+                    </li>
+                    <li>
+                        <a href="">Upcoming Events</a>
+                    </li>
+                    <li>
+                        <a href="">Past Events</a>
+                    </li>
+                    <li>
+                        <a href="">Gallary</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="desk-navlist">
+                <ul>
+                    <li>
+                        <a href="">Announcements</a>
+                    </li>
+                    <li>
+                        <a href="">Upcoming Events</a>
+                    </li>
+                    <li>
+                        <a href="">Past Events</a>
+                    </li>
+                    <li>
+                        <a href="">Gallary</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+
+    <!-- hero mobile -->
+    <div class="hero-wrap flex flex-col md:hidden">
+        <div class="image md:flex-[3]">
+            <img src="images/hero.jpg" alt="" class="w-full h-auto min-h-40 filter">
+        </div>
+        <div
+            class="content flex p-6 w-full bg-white text-center bg-gradient-to-r to-[--primary-color-light] from-white md:flex-[2]">
+            <div class="flex flex-col gap-2 justify-center items-center border-l-2 p-3 border-l-[--primary-color]">
+                <h1 class="mb-1 italic font-medium">Chasing Glory, Crafting Legends</h1>
+                <p>Join Us on Our Journey to the Top – Where Every Match Is a Story Unfolding</p>
+                <button class="mt-4 btn btn-primary md:w-1/2">Become Mobile</button>
+            </div>
+        </div>
+    </div>
+    <!-- hero -->
+
+    <!-- hero desktop -->
+    <div class="hero-wrap
+                hidden md:flex justify-end items-end bg-[url('images/hero.jpg')] bg-cover
+                h-[calc(100vh-122px)]">
+        <div class="clip-right
+                    content flex p-6 w-full text-center
+                    bg-gradient-to-r to-transparent from-white">
+            <div class="flex flex-col gap-2 justify-center 
+                        text-left border-l-2 p-3 border-l-[--primary-color]
+                        max-w-[45%]">
+                <h1 class="mb-1 italic font-medium">Chasing Glory, Crafting Legends</h1>
+                <p>Join Us on Our Journey to the Top – Where Every Match Is a Story Unfolding</p>
+                <button class="mt-4 btn btn-primary md:w-1/2">Become a Desk</button>
+            </div>
+        </div>
+    </div>
+    <!-- hero -->
+
+    <!-- events -->
+    <div class="section my-14">
+        <h1 class="text-4xl mb-8 pl-6 relative">Upcoming Events</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="flex flex-col w-full">
+                <div class="w-full mb-4">
+                    <img class="w-full h-auto rounded-md" src="images/placeholder-square.jpg" alt="">
+                </div>
+                <div>
+                    <span class="text-xs text-gray-400 font-bold uppercase">MAY 19, 2020</span>
+                    <h1 class="pb-2 text-2xl text-[var(--primary-color-dark)]">Sagarmatha vs Club X</h1>
+                    <a class="text-xs font-bold text-[var(--primary-color-dark)] uppercase" href="/"><span
+                            class="mr-2">+</span> LEARN MORE</a>
+                </div>
+            </div>
+            <div class="flex flex-col w-full">
+                <div class="w-full mb-4">
+                    <img class="w-full h-auto rounded-md" src="images/placeholder-square.jpg" alt="">
+                </div>
+                <div>
+                    <span class="text-xs text-gray-400 font-bold uppercase">MAY 19, 2020</span>
+                    <h1 class="pb-2 text-2xl text-[var(--primary-color-dark)]">Sagarmatha vs Club X</h1>
+                    <a class="text-xs font-bold text-[var(--primary-color-dark)] uppercase" href="/"><span
+                            class="mr-2">+</span> LEARN MORE</a>
+                </div>
+            </div>
+            <div class="flex flex-col w-full">
+                <div class="w-full mb-4">
+                    <img class="w-full h-auto rounded-md" src="images/placeholder-square.jpg" alt="">
+                </div>
+                <div>
+                    <span class="text-xs text-gray-400 font-bold uppercase">MAY 19, 2020</span>
+                    <h1 class="pb-2 text-2xl text-[var(--primary-color-dark)]">Sagarmatha vs Club X</h1>
+                    <a class="text-xs font-bold text-[var(--primary-color-dark)] uppercase" href="/"><span
+                            class="mr-2">+</span> LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- events -->
+
+    <!-- gallary -->
+    <div class="section my-14">
+        <h1 class="text-4xl mb-8 pl-6 relative">Gallary</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div>
+                <a href="images/placeholder-square.jpg" data-fancybox data-caption="Single image">
+                    <img src="images/placeholder-square.jpg" />
+                </a>
+            </div>
+            <div>
+                <a href="images/placeholder-square.jpg" data-fancybox data-caption="Single image">
+                    <img src="images/placeholder-square.jpg" />
+                </a>
+            </div>
+            <div>
+                <a href="images/placeholder-square.jpg" data-fancybox data-caption="Single image">
+                    <img src="images/placeholder-square.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- events -->
+</body>
+
+</html>
