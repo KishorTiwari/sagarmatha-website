@@ -33,7 +33,9 @@
         <!-- nav -->
         <div class="nav flex justify-between items-center px-8 py-4 md:py-8">
             <div class="nav-logo flex justify-start gap-x-2 items-center flex-1 text-left">
-                <img src="logo.png" class="w-[var(--logo-size)] h-auto" />
+                <a href="/">
+                    <img src="logo.png" class="w-[var(--logo-size)] h-auto" />
+                </a>
                 <!-- <span class="text-white text-2xl font-licorice">Sagarmatha Sports Club</span> -->
             </div>
             <div class="nav-bar mx-auto">
@@ -47,32 +49,29 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="#events">Events</a>
                         </li>
                         <li>
-                            <a href="">Events</a>
+                            <a href="#gallary">Gallary</a>
                         </li>
                         <li>
-                            <a href="">Gallary</a>
-                        </li>
-                        <li>
-                            <a href="">Contact Us</a>
+                            <a href="#contact-us">Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <div class="desk-navlist font-light">
                     <ul>
                         <li>
-                            <a href="">Events</a>
+                            <a href="#about-us">About Us</a>
                         </li>
                         <li>
-                            <a href="">Courses</a>
+                            <a href="#events">Events</a>
                         </li>
                         <li>
-                            <a href="">Gallary</a>
+                            <a href="#gallary">Gallary</a>
                         </li>
                         <li>
-                            <a href="">Contact Us</a>
+                            <a href="#contact-us">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -123,7 +122,7 @@
 
 
     <!-- about us -->
-    <div class="text-center p-10">
+    <div id="about-us" class="text-center p-10">
         <h1 class="text-4xl pb-4">About Us</h1>
         <div class="">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -146,7 +145,7 @@
     </div>
 
     <!-- upcoming events -->
-    <div class="section my-14">
+    <div id="events" class="section my-14">
         <h1 class="text-4xl mb-8 pl-6 relative">Upcoming Events</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div class="flex flex-col w-full">
@@ -227,7 +226,7 @@
     </div>
 
     <!-- gallary -->
-    <div class="section my-14">
+    <div id="gallary" class="section my-14">
         <h1 class="text-4xl mb-8 pl-6 relative">Gallary</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div>
@@ -264,7 +263,7 @@
     </div>
     <!-- events -->
     <!-- footer -->
-    <div class="section py-16 pb-4 bg-black flex flex-col gap-y-10 justify-between items-center text-white">
+    <div id="contact-us" class="section py-16 pb-4 bg-black flex flex-col gap-y-10 justify-between items-center text-white">
         <div class="w-[100%] max-w-[800px]">
             <div class="text-center mb-10">
                 <h2
